@@ -1,0 +1,135 @@
+.timeline {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.timeline__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  margin-left: -1.5px;
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.timeline__line-fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent-gradient);
+  transform-origin: top;
+  transition: transform 0.2s linear;
+}
+
+.timeline__list {
+  display: grid;
+  gap: clamp(1.6rem, 3vw, 2.6rem);
+}
+
+.timeline__item {
+  position: relative;
+  width: calc(50% - 2.6rem);
+  opacity: 0;
+  transform: translate3d(-40px, 20px, 0);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.timeline__item--right {
+  margin-left: auto;
+  transform: translate3d(40px, 20px, 0);
+}
+
+.timeline__item.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline__node {
+  position: absolute;
+  top: 30px;
+  right: -3.35rem;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--orange);
+  box-shadow: var(--shadow-xs);
+}
+
+.timeline__item--right .timeline__node {
+  right: auto;
+  left: -3.35rem;
+}
+
+.timeline__node-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  animation: pulseRing 2.8s var(--ease-out) infinite;
+}
+
+.timeline__card .card__inner {
+  padding: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.timeline__period {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent-gradient-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.timeline__role {
+  font-size: var(--fs-h3);
+  margin: 0.8rem 0 0.3rem;
+}
+
+.timeline__company {
+  margin: 0 0 0.7rem;
+  font-weight: 700;
+  color: var(--orange-deep);
+}
+
+.timeline__company span {
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+
+.timeline__summary {
+  margin-bottom: 0.9rem;
+}
+
+.timeline__points {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline__points li {
+  display: flex;
+  gap: 0.55rem;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+}
+
+.timeline__points .icon {
+  margin-top: 0.35rem;
+  color: var(--orange);
+}
+
+.timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}

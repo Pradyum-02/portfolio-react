@@ -1,0 +1,17 @@
+.experience {
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: -160px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, rgba(255, 213, 79, 0.28), transparent 70%);
+  animation: blobMove 18s var(--ease-in-out) infinite;
+  pointer-events: none;
+}

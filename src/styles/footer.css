@@ -1,0 +1,87 @@
+.footer {
+  padding: clamp(2.4rem, 5vw, 3.6rem) 0 2rem;
+  background: var(--white);
+}
+
+.footer__divider {
+  display: block;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent-gradient);
+  background-size: 200% 100%;
+  animation: gradientShift 9s var(--ease-in-out) infinite;
+  margin-bottom: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer__brand > div {
+  display: grid;
+}
+
+.footer__brand strong {
+  font-family: var(--font-display);
+}
+
+.footer__brand span {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.footer__mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--accent-gradient);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+  animation: floatSoft 6s var(--ease-in-out) infinite;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--t-fast) var(--spring), box-shadow var(--t-fast) ease;
+}
+
+.footer__top:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.footer__top .icon {
+  color: var(--orange);
+}
+
+.footer__note {
+  margin: 1.8rem 0 0;
+  font-size: 0.83rem;
+  color: var(--ink-muted);
+}
