@@ -7,7 +7,7 @@ export const profile = {
   email: "pradyumofc13@gmail.com",
   phone: "+91 98765 43210",
   resumeUrl: "/pradyum-resume.pdf",
-  availability: "Open to Software Engineering Internships and exciting opportunities to build impactful products.",
+  availability: "Open for SDE Internships",
 };
 
 export const socials = [

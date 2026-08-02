@@ -12,7 +12,7 @@ export default function Services() {
           eyebrow="Services"
           title="How I can help your team."
           highlight={["help"]}
-          description="Open to Software Engineering Internships and exciting opportunities to build impactful products."
+          description="Open for SDE Internships"
         />
 
         <div className="services__grid">
