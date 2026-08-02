@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Pradyum Sharma",
+  name: "Pradyum Meshram",
   firstName: "Pradyum",
   role: "Full Stack Developer",
   tagline: "Computer Engineering student passionate about full-stack web development and software engineering.",
