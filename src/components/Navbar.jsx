@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
 import Icon from "../ui/Icon";
+import ThemeToggle from "../ui/ThemeToggle";
 import { profile } from "../data/socials";
 
 const links = [
@@ -85,6 +86,7 @@ export default function Navbar() {
         </nav>
 
         <div className="navbar__actions">
+          <ThemeToggle />
           <Button
             as="a"
             href={profile.resumeUrl}

@@ -130,7 +130,15 @@ const paths = {
   close: <path d="M6 6l12 12M18 6L6 18" />,
   quote: <path d="M9 6c-3 1.5-4.5 4-4.5 7.5V18h5v-5H6c0-2.5 1-4.2 3-5zM19 6c-3 1.5-4.5 4-4.5 7.5V18h5v-5H16c0-2.5 1-4.2 3-5z" />,
   check: <path d="M5 13l4.5 4.5L19 7" />,
+  sun: (
+    <>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" />
+    </>
+  ),
+  moon: <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" />,
 };
+
 
 /** Single reusable stroke-based icon set — no icon library required. */
 export default function Icon({ name, size = 22, className = "", ...rest }) {

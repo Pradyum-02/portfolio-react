@@ -54,3 +54,34 @@
   --z-nav: 60;
   --z-progress: 70;
 }
+
+/* Dark mode — same layout & type scale, re-mapped palette */
+:root[data-theme="dark"] {
+  --white: #14161a;
+  --soft-white: #1b1e24;
+  --light-grey: #2b3038;
+  --ink: #f2f3f5;
+  --ink-soft: #c3c7cf;
+  --ink-muted: #9298a3;
+
+  --bg: var(--white);
+  --bg-soft: var(--soft-white);
+  --border: var(--light-grey);
+  --accent: var(--orange);
+  --accent-gradient: linear-gradient(135deg, #ffc53d, #ff8f1f);
+  --accent-gradient-soft: linear-gradient(135deg, #3a2f1a, #402d16);
+
+  --shadow-xs: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 32px 70px rgba(0, 0, 0, 0.58);
+  --shadow-accent: 0 20px 44px rgba(255, 152, 0, 0.22);
+}
+
+:root {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}

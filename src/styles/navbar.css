@@ -178,3 +178,22 @@
   padding-left: 1rem;
   color: var(--orange-deep);
 }
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--ink);
+  transition: transform var(--t-fast) var(--spring), border-color var(--t-fast) ease,
+    background var(--t-fast) ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px) rotate(-8deg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
