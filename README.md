@@ -21,7 +21,7 @@
 
 This is my personal portfolio — a dark-themed, glassmorphism-driven showcase of the projects, skills, and engineering approach I bring to full stack development. Built with **React**, deployed on **Vercel**, and designed to feel premium rather than templated: animated backgrounds, smooth micro-interactions, and a cohesive visual language across every section.
 
-> 🔗 **Live:** [portfolio-react-two-kappa-81.vercel.app](https://portfolio-react-two-kappa-81.vercel.app/)
+> 🔗 **Live:** https://www.made-by-pradyum.online/
 
 ---
 
