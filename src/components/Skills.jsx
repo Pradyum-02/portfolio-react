@@ -15,6 +15,18 @@ const groupIcons = {
   tools: "terminal",
 };
 
+const itemIcons = {
+  "Node.js": "node",
+  "Express.js": "api",
+  FastAPI: "server",
+  MongoDB: "database",
+  PostgreSQL: "database",
+  MySQL: "database",
+  Redis: "layers",
+  Supabase: "cloud",
+  Firebase: "cloud",
+};
+
 export default function Skills() {
   const [activeId, setActiveId] = useState(skillGroups[0].id);
   const active = skillGroups.find((group) => group.id === activeId);
@@ -58,7 +70,7 @@ export default function Skills() {
                 style={{ animationDelay: `${index * 70}ms` }}
               >
                 <span className="skill-card__icon">
-                  <Icon name={groupIcons[active.id]} size={24} />
+                  <Icon name={itemIcons[item] || groupIcons[active.id]} size={24} />
                 </span>
                 <span className="skill-card__name">{item}</span>
               </Card>

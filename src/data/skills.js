@@ -14,8 +14,8 @@ export const skillGroups = [
   {
     id: "database",
     title: "Database",
-    blurb: "Data models that stay practical and scalable.",
-    items: ["MongoDB", "Mongoose", "MongoDB Atlas", "MongoDB Compass", "Schema Design", "Data Modeling"],
+    blurb: "Data systems built for practical, scalable applications.",
+    items: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Supabase", "Firebase"],
   },
   {
     id: "languages",
